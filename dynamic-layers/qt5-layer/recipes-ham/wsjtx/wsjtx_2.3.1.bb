@@ -2,21 +2,22 @@ SUMMARY = "WSJT-X"
 
 DESCRIPTION = "WSJT-X implements communication protocols or 'modes' called \
 FST4, FST4W, FT4, FT8, JT4, JT9, JT65, QRA64, ISCAT, MSK144, and WSPR, as well \
-as one called Echo for detecting and measuring your own radio signals reflected \
-from the Moon. These modes were all designed for making reliable, confirmed QSOs \
-under extreme weak-signal conditions."
+as one called Echo for detecting and measuring your own radio signals \
+reflected from the Moon. These modes were all designed for making reliable, \
+confirmed QSOs under extreme weak-signal conditions."
 
 HOMEPAGE = "https://physics.princeton.edu/pulsar/k1jt/wsjtx.html"
 
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6ee272f0a941cfe6ea96c7a0a7990260"
 
-SRC_URI = "git://git.code.sf.net/p/wsjt/wsjtx;protocol=git;branch=master \
+SRC_URI = "git://git.code.sf.net/p/wsjt/wsjtx;protocol=git;nobranch=1 \
            file://0001-Add-shmem-dependency-to-jt9.patch \
            file://0002-Disable-openmp-code.patch \
           "
 
-SRCREV = "0c42df79dfd9a83fbfbf21c5b054fe6d09e82327"
+# the wsjtx-2.3.1 tag:
+SRCREV = "0e7224f668d0b9b45178c5c78c40c2c6885ac941"
 
 S = "${WORKDIR}/git"
 
