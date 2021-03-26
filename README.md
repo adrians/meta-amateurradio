@@ -33,8 +33,9 @@ Please send your issues, patches and pull requests on the github repository, at
 ## Hints
 
 * Some digital modes (WSPR, FT8, etc.) require a synchronized system clock. If
-the board. You might want to install `ntpdate` on the board (from
-meta-networking layer).
+the board does not have a synchronized RTC module but has an internet
+connection, you might want to install `ntpdate` (from the `meta-networking`
+layer).
 
 * Some packages (WSJT-X, JS8Call) depend on fortran libraries, but the fortran
 runtime is not enabled by default in the yocto project. You'll need to add the
