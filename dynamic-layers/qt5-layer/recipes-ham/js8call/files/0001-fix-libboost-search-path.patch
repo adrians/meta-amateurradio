@@ -1,0 +1,26 @@
+From 6e8d6d223738878f0711f353f4539471dd2d486f Mon Sep 17 00:00:00 2001
+From: Adrian Stratulat <adrian.stratulat91@gmail.com>
+Date: Sun, 4 Apr 2021 00:14:23 +0300
+Subject: [PATCH] fix libboost search path
+
+---
+ CMakeLists.txt | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 53f0dba..6ac2113 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -536,11 +536,7 @@ find_program(ETAGS etags)
+ #
+ # Boost
+ #
+-set (Boost_NO_SYSTEM_PATHS TRUE)
+-if (Boost_NO_SYSTEM_PATHS)
+-  set (BOOST_ROOT ${PROJECT_SOURCE_DIR}/boost)
+-endif ()
+-find_package (Boost 1.63 REQUIRED)
++find_package (Boost 1.63 REQUIRED)
+ if (Boost_FOUND)
+   include_directories (${Boost_INCLUDE_DIRS})
+ endif ()
