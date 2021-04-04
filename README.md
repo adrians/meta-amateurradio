@@ -7,23 +7,21 @@ software packages for amateur radio operators.
 
 This layer depends on:
 
-* URI: git://git.yoctoproject.org/poky
-  * layers: meta
-  * branch: dunfell / gatesgarth / hardknott
-
-* URI: git://git.openembedded.org/meta-openembedded
-  * layers: meta-oe
-  * layers: dunfell / gatesgarth / hardknott
+* URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
+  * layer: `meta`
+  * branches: `dunfell / gatesgarth / hardknott`
+* URI: http://git.openembedded.org/meta-openembedded
+  * layer: `meta-oe`
+  * branches: `dunfell / gatesgarth / hardknott`
 
 Optional dependencies:
 
-* URI: git://github.com/meta-qt5/meta-qt5
-  * layers: meta-qt5
-  * layers: dunfell / gatesgarth / hardknott
-
-* URI: git://git.openembedded.org/meta-openembedded
-  * layers: meta-networking
-  * layers: dunfell / gatesgarth / hardknott
+* URI: https://github.com/meta-qt5/meta-qt5
+  * layer: `meta-qt5`
+  * branches: `dunfell / gatesgarth / hardknott`
+* URI: http://git.openembedded.org/meta-openembedded
+  * layer: `meta-networking`
+  * branches: `dunfell / gatesgarth / hardknott`
 
 ## Issues & contributions
 
