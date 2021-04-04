@@ -1,29 +1,29 @@
 # Meta-amateurradio
 
 This layer is intended to add recipes for SDR packages, digital modes and other
-software indended for amateur radio operators.
+software packages for amateur radio operators.
 
 ## Dependencies
 
 This layer depends on:
 
 * URI: git://git.yoctoproject.org/poky
-  * layers: meta, meta-poky
-  * branch: dunfell / gatesgarth
+  * layers: meta
+  * branch: dunfell / gatesgarth / hardknott
 
 * URI: git://git.openembedded.org/meta-openembedded
   * layers: meta-oe
-  * layers: dunfell / gatesgarth
+  * layers: dunfell / gatesgarth / hardknott
 
 Optional dependencies:
 
 * URI: git://github.com/meta-qt5/meta-qt5
   * layers: meta-qt5
-  * layers: dunfell / gatesgarth
+  * layers: dunfell / gatesgarth / hardknott
 
 * URI: git://git.openembedded.org/meta-openembedded
   * layers: meta-networking
-  * layers: dunfell / gatesgarth
+  * layers: dunfell / gatesgarth / hardknott
 
 ## Issues & contributions
 
@@ -39,7 +39,7 @@ layer).
 
 * Some packages (WSJT-X, JS8Call) depend on fortran libraries, but the fortran
 runtime is not enabled by default in the yocto project. You'll need to add the
-following lone to the `conf/local.conf` file:
+following line to the `conf/local.conf` file:
 ```
 FORTRAN_forcevariable = ",fortran"
 ```
@@ -52,7 +52,7 @@ rmmod dvb_usb_rtl28xxu
 
 * When starting direwolf, you need a configuration file in `~/direwolf.conf`
 specifying the audio interface. Use `cm108` tool to identify the audio interface
-and then create the file:
+and then create the file like this:
 ```bash
-echo "ADEVICE plughw:0,0" > direwolf.conf
+echo "ADEVICE plughw:0,0" > ~/direwolf.conf
 ```
