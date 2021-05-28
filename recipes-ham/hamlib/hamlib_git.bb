@@ -13,7 +13,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 SRC_URI = "git://git.code.sf.net/u/bsomervi/hamlib;protocol=git;branch=integration \
           "
 
-SRCREV = "6d52e85159f7caae0e5cb3010364a53a9b4108c0"
+SRCREV = "c573bd44fe6009500f4c6cc47943823715b176a5"
 
 S = "${WORKDIR}/git"
 

@@ -1,0 +1,22 @@
+From 116267dce61647d3afefe11b571d4c2591d26274 Mon Sep 17 00:00:00 2001
+From: Adrian Stratulat <adrian.stratulat91@gmail.com>
+Date: Fri, 2 Apr 2021 19:26:10 +0300
+Subject: [PATCH] FILPATHLEN has been renamed in upstream hamlib versions
+
+---
+ rig/rigcontrol.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/qsstv/rig/rigcontrol.cpp b/qsstv/rig/rigcontrol.cpp
+index 60ada12..6b78943 100644
+--- a/rig/rigcontrol.cpp
++++ b/rig/rigcontrol.cpp
+@@ -87,7 +87,7 @@ bool rigControl::init()
+     }
+   if(!catParams.serialPort.isEmpty())
+      {
+-      strncpy(my_rig->state.rigport.pathname,(const char *)catParams.serialPort.toLatin1().data(),FILPATHLEN-1);
++      strncpy(my_rig->state.rigport.pathname,(const char *)catParams.serialPort.toLatin1().data(),HAMLIB_FILPATHLEN-1);
+     }
+ //  strncpy(my_rig->state.pttport.pathname,(const char *)catParams.serialPort.toLatin1().data(),FILPATHLEN);
+   my_rig->state.rigport.parm.serial.rate = catParams.baudrate;
