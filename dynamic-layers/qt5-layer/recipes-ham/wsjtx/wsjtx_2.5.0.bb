@@ -16,13 +16,13 @@ SRC_URI = "git://git.code.sf.net/p/wsjt/wsjtx;protocol=git;nobranch=1 \
            file://0002-Disable-openmp-code.patch \
           "
 
-# the wsjtx-2.4.0 tag:
-SRCREV = "c19d6225acc9d93c55a98d972fcb118b5d32b2f7"
+# the wsjtx-2.5.0 tag:
+SRCREV = "f95b59b1cd0e7002d8c140179b81dd59a8e732df"
 
 S = "${WORKDIR}/git"
 
 DEPENDS = "qttools-native asciidoc-native libgfortran boost fftw libusb \
-           qtmultimedia qtserialport hamlib qttools"
+           qtmultimedia qtserialport hamlib qttools portaudio-v19"
 
 # WSPR, FT8 and other similar protocols require a synchronized system clock and
 # adjusted volume levels. This is why ntpdate and alsamixer are recommended.
