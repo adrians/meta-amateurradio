@@ -35,6 +35,11 @@ the board does not have a synchronized RTC module but has an internet
 connection, you might want to install `ntpdate` (from the `meta-networking`
 layer).
 
+* On the "dunfell" release, building CubicSDR fails due to the wxwidgets
+library not being detected by cmake. You need to cherrypick [this](http://cgit.openembedded.org/meta-openembedded/commit/?id=7219c72141c2c5c902232dfba590fd85954f2aae)
+commit on the `meta-openembedded/meta-oe` layer before attempting to build
+CubicSDR.
+
 * Some packages (WSJT-X, JS8Call) depend on fortran libraries, but the fortran
 runtime is not enabled by default in the yocto project. You'll need to add the
 following line to the `conf/local.conf` file:
