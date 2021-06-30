@@ -11,9 +11,9 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 SRC_URI = "http://www.w1hkj.com/files/fldigi/${BP}.tar.gz \
           "
-SRC_URI[md5sum] = "8cdab5b504f28553ec3c1f50cbd2f801"
-SRC_URI[sha256sum] = "3c7fd84ab3a84ba4525b251e9d56120daee626a3831684a974fdad476f90270d"
+SRC_URI[md5sum] = "61f68a174bfabedbd88b417c48ec21c7"
+SRC_URI[sha256sum] = "8715e7109d2a674d80b742c97743fe7cb8997166b3c6ddef622c8cd8779d6e7f"
 
 inherit autotools gettext
 
-DEPENDS = "fltk libsamplerate0 portaudio-v19"
+DEPENDS = "fltk udev libsamplerate0 portaudio-v19"
