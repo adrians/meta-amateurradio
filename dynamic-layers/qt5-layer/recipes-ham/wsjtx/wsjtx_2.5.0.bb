@@ -16,8 +16,8 @@ SRC_URI = "git://git.code.sf.net/p/wsjt/wsjtx;protocol=git;nobranch=1 \
            file://0002-Disable-openmp-code.patch \
           "
 
-# the wsjtx-2.5.0-rc1 tag:
-SRCREV = "68a3d410da4b67a12e1bed04e85923062d121e75"
+# the wsjtx-2.5.0-rc2 tag:
+SRCREV = "2c07d5af3edfe34a38cb3949ba7f0536f5fc23d4"
 
 S = "${WORKDIR}/git"
 
