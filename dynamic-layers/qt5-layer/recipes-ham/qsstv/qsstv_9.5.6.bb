@@ -10,13 +10,12 @@ LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=57baf3d8c07efa88a6a07754076c97d7"
 
 SRC_URI = "http://users.telenet.be/on4qz/qsstv/downloads/${BPN}_${PV}.tar.gz \
-           file://0001-FILPATHLEN-has-been-renamed-in-upstream-hamlib-versi.patch \
           "
 
-SRC_URI[md5sum] = "7b19ded9c6e60d328a84c6592ea41a77"
-SRC_URI[sha256sum] = "177e286090c71f8a033646b39c3b6abe212cc06718c1ecc9ddc7024198cb7e40"
+SRC_URI[md5sum] = "622ffcc401c2314e05d350499ccbd437"
+SRC_URI[sha256sum] = "5cfcf717ef5eacecf82e046e7b7460a2d98df6b602a5a7f6d5058928cce160ed"
 
-S = "${WORKDIR}/${BPN}_${PV}"
+S = "${WORKDIR}/${BPN}"
 
 inherit qmake5
 
