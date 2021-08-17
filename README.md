@@ -9,19 +9,19 @@ This layer depends on:
 
 * URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
   * layer: `meta`
-  * branches: `dunfell / gatesgarth / hardknott`
+  * branches: `dunfell / hardknott`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `dunfell / gatesgarth / hardknott`
+  * branches: `dunfell / hardknott`
 
 Optional dependencies:
 
 * URI: https://github.com/meta-qt5/meta-qt5
   * layer: `meta-qt5`
-  * branches: `dunfell / gatesgarth / hardknott`
+  * branches: `dunfell / hardknott`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `dunfell / gatesgarth / hardknott`
+  * branches: `dunfell / hardknott`
 
 ## Issues & contributions
 
