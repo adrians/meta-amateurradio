@@ -18,6 +18,6 @@ S = "${WORKDIR}/git"
 
 inherit cmake
 DEPENDS = "virtual/libgles2 wxwidgets liquiddsp soapysdr pulseaudio"
-RDEPENDS_${PN} = "liquiddsp-dev"
+RDEPENDS:${PN} = "liquiddsp-dev"
 
-INSANE_SKIP_${PN} += "dev-deps"
+INSANE_SKIP:${PN} += "dev-deps"

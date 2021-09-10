@@ -22,8 +22,8 @@ DEPENDS = "qttools-native asciidoc-native libgfortran boost fftw libusb \
 
 # WSPR, FT8 and other similar protocols require a synchronized system clock and
 # adjusted volume levels. This is why ntpdate and alsamixer are recommended.
-RRECOMMENDS_${PN} = "alsa-utils-alsamixer"
-RSUGGESTS_${PN} = "ntpdate"
+RRECOMMENDS:${PN} = "alsa-utils-alsamixer"
+RSUGGESTS:${PN} = "ntpdate"
 
 inherit cmake_qt5
 
@@ -35,11 +35,11 @@ EXTRA_OECMAKE = " \
 OECMAKE_FIND_ROOT_PATH_MODE_PROGRAM = "BOTH"
 OECMAKE_GENERATOR = "Unix Makefiles"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
 
 # Because some of the code is written in fortran, we'll need GCC with fortran
 # support built-in. To enable this, you must add the following line to the
 # conf/local.conf file:
 #
-# FORTRAN_forcevariable = ",fortran"
+# FORTRAN:forcevariable = ",fortran"
 #

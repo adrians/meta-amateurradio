@@ -18,7 +18,7 @@ S = "${WORKDIR}/git"
 inherit autotools-brokensep
 
 DEPENDS = "fftw"
-RDEPENDS_${PN} = "bash"
+RDEPENDS:${PN} = "bash"
 
 do_install () {
     oe_runmake install PREFIX=${D}

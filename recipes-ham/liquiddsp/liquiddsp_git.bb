@@ -18,5 +18,5 @@ SRCREV = "c68f5e39434433c88bd4fe19784bf4c8a32aa8e4"
 S = "${WORKDIR}/git"
 
 inherit autotools-brokensep
-INSANE_SKIP_${PN}-dev += "dev-elf"
-RDEPENDS_${PN}-dev = ""
+INSANE_SKIP:${PN}-dev += "dev-elf"
+RDEPENDS:${PN}-dev = ""

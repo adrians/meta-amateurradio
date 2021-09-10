@@ -17,5 +17,5 @@ S = "${WORKDIR}/git"
 inherit cmake
 
 DEPENDS = "rtlsdr soapysdr"
-RDEPENDS_${PN} = "rtlsdr soapysdr"
-FILES_${PN} += "${libdir}/*"
+RDEPENDS:${PN} = "rtlsdr soapysdr"
+FILES:${PN} += "${libdir}/*"

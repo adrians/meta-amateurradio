@@ -19,5 +19,5 @@ inherit autotools-brokensep gettext
 
 DEPENDS = "glib-2.0-native libtool-native intltool-native curl glib-2.0 goocanvas"
 
-CFLAGS_append = " -Wl,--allow-multiple-definition"
-RSUGGESTS_${PN} = "ntpdate"
+CFLAGS:append = " -Wl,--allow-multiple-definition"
+RSUGGESTS:${PN} = "ntpdate"

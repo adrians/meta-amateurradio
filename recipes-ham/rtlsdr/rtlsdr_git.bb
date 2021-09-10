@@ -9,7 +9,7 @@ LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=751419260aa954499f7abaabaa882bbe"
 
 DEPENDS = "libusb1"
-RDEPENDS_${PN} = "libusb1"
+RDEPENDS:${PN} = "libusb1"
 
 SRCREV = "0d825fe08ef1e0225340fa7d8dffa621ad80a818"
 SRC_URI = "git://github.com/keenerd/rtl-sdr.git;protocol=git;branch=master \

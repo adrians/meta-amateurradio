@@ -9,19 +9,19 @@ This layer depends on:
 
 * URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
   * layer: `meta`
-  * branches: `dunfell / hardknott`
+  * branches: `honister`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `dunfell / hardknott`
+  * branches: `honister`
 
 Optional dependencies:
 
 * URI: https://github.com/meta-qt5/meta-qt5
   * layer: `meta-qt5`
-  * branches: `dunfell / hardknott`
+  * branches: `honister`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `dunfell / hardknott`
+  * branches: `honister`
 
 ## Issues & contributions
 
@@ -30,21 +30,23 @@ Please send your issues, patches and pull requests on the github repository, at
 
 ## Hints
 
+* Previously the master-branch of this repository was maintained to be
+compatible with `dunfell` and `hardknott` releases. The recipes for these
+two releases have been moved to the `dunfell` branch, while the `master`
+branch tracks the current `honister` release. This is due to the breaking
+changes in the syntactic rules for the recipe introduced in the `honister`
+release.
+
 * Some digital modes (WSPR, FT8, etc.) require a synchronized system clock. If
 the board does not have a synchronized RTC module but has an internet
 connection, you might want to install `ntpdate` (from the `meta-networking`
 layer).
 
-* On the "dunfell" release, building CubicSDR fails due to the wxwidgets
-library not being detected by cmake. You need to cherrypick [this](http://cgit.openembedded.org/meta-openembedded/commit/?id=7219c72141c2c5c902232dfba590fd85954f2aae)
-commit on the `meta-openembedded/meta-oe` layer before attempting to build
-CubicSDR.
-
 * Some packages (WSJT-X, JS8Call) depend on fortran libraries, but the fortran
 runtime is not enabled by default in the yocto project. You'll need to add the
 following line to the `conf/local.conf` file:
 ```
-FORTRAN_forcevariable = ",fortran"
+FORTRAN:forcevariable = ",fortran"
 ```
 
 * If using rtl-based sdr dongles, you might need to unload the `dvb_usb_rtl28xxu`

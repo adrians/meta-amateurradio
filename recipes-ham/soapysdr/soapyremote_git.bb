@@ -18,6 +18,6 @@ S = "${WORKDIR}/git"
 inherit cmake
 
 DEPENDS = "soapysdr avahi"
-RDEPENDS_${PN} = "soapysdr libavahi-client avahi-daemon"
+RDEPENDS:${PN} = "soapysdr libavahi-client avahi-daemon"
 
-FILES_${PN} += "${libdir}/* ${systemd_unitdir}/system"
+FILES:${PN} += "${libdir}/* ${systemd_unitdir}/system"

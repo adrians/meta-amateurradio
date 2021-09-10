@@ -17,10 +17,10 @@ SRCREV = "413855e7915865db998239e8383cb7f84d5ac1bd"
 S = "${WORKDIR}/git"
 
 DEPENDS = "alsa-lib udev"
-RDEPENDS_${PN} = "bash perl"
+RDEPENDS:${PN} = "bash perl"
 
 inherit cmake
 
-do_install_append() {
+do_install:append() {
 	rm -f ${D}/usr/bin/telem-volts.py
 }
