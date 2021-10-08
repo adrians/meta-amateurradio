@@ -24,3 +24,5 @@ inherit cmake
 do_install_append() {
 	rm -f ${D}/usr/bin/telem-volts.py
 }
+
+EXTRA_OECMAKE:append:arm = " ${@bb.utils.contains("TUNE_FEATURES","neon","-DRUN_NEON=0","-DRUN_NEON=1",d)}"
