@@ -13,7 +13,10 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 SRC_URI = "git://git.code.sf.net/u/bsomervi/hamlib;protocol=git;branch=integration \
           "
 
-SRCREV = "c573bd44fe6009500f4c6cc47943823715b176a5"
+# the wsjtx-2.5.2 tag:
+SRCREV = "53bb589d2cfb2a8e8525ff9bd7f57befb9e2caba"
+
+DEPENDS = "libusb1"
 
 S = "${WORKDIR}/git"
 
