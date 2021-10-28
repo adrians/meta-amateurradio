@@ -1,4 +1,4 @@
-From f453e5311a826a9a92ca2e6f82d381fbfbaa6e86 Mon Sep 17 00:00:00 2001
+From c738f28e89883cc0a689fc893d6de59bd64b62cd Mon Sep 17 00:00:00 2001
 From: Adrian Stratulat <adrian.stratulat91@gmail.com>
 Date: Tue, 2 Jun 2020 23:13:18 +0300
 Subject: [PATCH] Add shmem dependency to jt9
@@ -8,10 +8,10 @@ Subject: [PATCH] Add shmem dependency to jt9
  1 file changed, 1 insertion(+)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 3c1bedfee..e89951b9d 100644
+index 21f073fb8..aa21fd55b 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -244,6 +244,7 @@ set (wsjt_qtmm_CXXSRCS
+@@ -246,6 +246,7 @@ set (wsjt_qtmm_CXXSRCS
    )
  
  set (jt9_FSRCS
