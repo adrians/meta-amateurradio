@@ -9,7 +9,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=76c8dd204c0791e9a30c30d0406b75da"
 
 SRCREV = "bec4f0504b29369fd8ff651e6954b960991bc1b1"
-SRC_URI = "git://github.com/pothosware/SoapyRTLSDR.git;protocol=git;branch=master \
+SRC_URI = "git://github.com/pothosware/SoapyRTLSDR.git;protocol=https;branch=master \
           "
 
 S = "${WORKDIR}/git"
