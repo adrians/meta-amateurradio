@@ -12,7 +12,7 @@ LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=0eae42b21c81e0e7c8c3e8a545e156c9"
 DEPENDS = "fftw rtlsdr"
 
 SRCREV = "66074b82daf4a1c588ce1c565a145fac1c59ec56"
-SRC_URI = "git://github.com/steve-m/kalibrate-rtl.git;protocol=git;branch=master \
+SRC_URI = "git://github.com/steve-m/kalibrate-rtl.git;protocol=https;branch=master \
           "
 S = "${WORKDIR}/git"
 

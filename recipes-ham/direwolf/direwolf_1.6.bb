@@ -9,7 +9,7 @@ HOMEPAGE = "https://github.com/wb2osz/direwolf/"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=fa22e16ebbe6638b2bd253338fbded9f"
 
-SRC_URI = "git://github.com/wb2osz/direwolf.git;protocol=git;branch=master \
+SRC_URI = "git://github.com/wb2osz/direwolf.git;protocol=https;branch=master \
           "
 
 SRCREV = "413855e7915865db998239e8383cb7f84d5ac1bd"
