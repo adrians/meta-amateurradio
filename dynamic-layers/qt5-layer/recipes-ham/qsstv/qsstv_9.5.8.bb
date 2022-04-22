@@ -17,7 +17,7 @@ SRC_URI[sha256sum] = "c03f7fa5c680ced8fd331c25ff3e47440c9aedb48ec7b66255c6aa0ed8
 
 S = "${WORKDIR}/${BPN}"
 
-inherit qmake5
+inherit qmake5 pkgconfig
 
 DEPENDS = "openjpeg alsa-lib pulseaudio hamlib fftw v4l-utils qtbase"
 

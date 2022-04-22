@@ -14,6 +14,6 @@ SRC_URI = "http://www.w1hkj.com/files/fldigi/${BP}.tar.gz \
 SRC_URI[md5sum] = "b7c93a9477dbd35526506bd2541578fe"
 SRC_URI[sha256sum] = "5030900a0f6905eb86dbe68e41fff0be781eecee6d42007675540e2a23bec438"
 
-inherit autotools gettext
+inherit autotools gettext pkgconfig
 
 DEPENDS = "fltk udev libsamplerate0 portaudio-v19"
