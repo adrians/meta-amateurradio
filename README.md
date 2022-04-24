@@ -9,19 +9,19 @@ This layer depends on:
 
 * URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
   * layer: `meta`
-  * branches: `honister`
+  * branches: `kirkstone`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `honister`
+  * branches: `kirkstone`
 
 Optional dependencies:
 
 * URI: https://github.com/meta-qt5/meta-qt5
   * layer: `meta-qt5`
-  * branches: `honister`
+  * branches: `kirkstone`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `honister`
+  * branches: `kirkstone`
 
 ## Issues & contributions
 
@@ -33,7 +33,7 @@ Please send your issues, patches and pull requests on the github repository, at
 * Previously the master-branch of this repository was maintained to be
 compatible with `dunfell` and `hardknott` releases. The recipes for these
 two releases have been moved to the `dunfell` branch, while the `master`
-branch tracks the current `honister` release. This is due to the breaking
+branch tracks the current `honister` and `kirkstone` releases. This is due to the breaking
 changes in the syntactic rules for the recipe introduced in the `honister`
 release.
 
