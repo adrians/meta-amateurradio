@@ -6,7 +6,7 @@ library for drawing."
 
 HOMEPAGE = "https://wiki.gnome.org/Projects/GooCanvas"
 
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=3bf50002aefd002f49e7bb854063f7e7"
 
 SRC_URI = "http://ftp.gnome.org/pub/GNOME/sources/goocanvas/2.0/goocanvas-2.0.4.tar.xz \

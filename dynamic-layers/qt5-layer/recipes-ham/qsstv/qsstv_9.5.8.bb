@@ -6,7 +6,7 @@ EasyPal."
 
 HOMEPAGE = "http://users.telenet.be/on4qz/index.html"
 
-LICENSE = "GPLv3"
+LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=57baf3d8c07efa88a6a07754076c97d7"
 
 SRC_URI = "http://users.telenet.be/on4qz/qsstv/downloads/${BPN}_${PV}.tar.gz \

@@ -8,7 +8,7 @@ confirmed QSOs under extreme weak-signal conditions."
 
 HOMEPAGE = "https://physics.princeton.edu/pulsar/k1jt/wsjtx.html"
 
-LICENSE = "GPLv3"
+LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=6ee272f0a941cfe6ea96c7a0a7990260"
 
 SRC_URI = "git://git.code.sf.net/p/wsjt/wsjtx;protocol=git;nobranch=1 \

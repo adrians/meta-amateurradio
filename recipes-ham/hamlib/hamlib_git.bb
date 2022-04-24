@@ -6,7 +6,7 @@ controlling the myriad of radios and rotators available to amateur radio and \
 communications users."
 
 HOMEPAGE = "https://hamlib.github.io/"
-LICENSE = "GPLv2+"
+LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 # WSJT-X needs the forked version of hamlib instead of the main one

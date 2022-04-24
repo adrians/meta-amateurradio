@@ -6,7 +6,7 @@ position and other data in lists, tables, maps, and polar plots (radar view)."
 
 HOMEPAGE = "http://gpredict.oz9aec.net/"
 
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=892f569a555ba9c07a568a7c0c4fa63a"
 
 SRC_URI = "https://github.com/csete/gpredict/releases/download/v2.2.1/gpredict-2.2.1.tar.bz2 \

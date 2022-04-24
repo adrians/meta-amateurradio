@@ -5,7 +5,7 @@ Defined Radio."
 
 HOMEPAGE = "https://github.com/ha7ilm/csdr"
 
-LICENSE = "BSD & GPLv3+"
+LICENSE = "BSD-3-Clause & GPL-3.0-or-later"
 LIC_FILES_CHKSUM = "file://README.md;md5=655403e2809c61b2c0bc7446f148cfd7"
 
 SRC_URI = "git://github.com/simonyiszk/csdr.git;protocol=https;branch=master \

@@ -5,7 +5,7 @@ signal keyboard to keyboard messaging to Amateur Radio Operators."
 
 HOMEPAGE = "http://js8call.com/"
 
-LICENSE = "GPLv3"
+LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=95b4671532b5d104b42841286d58c520"
 
 SRC_URI = "git://bitbucket.org/widefido/js8call.git;protocol=https;branch=js8call \
