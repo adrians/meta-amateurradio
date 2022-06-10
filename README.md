@@ -31,9 +31,9 @@ Please send your issues, patches and pull requests on the github repository, at
 ## Hints
 
 * Previously the master-branch of this repository was maintained to be
-compatible with `dunfell` and `hardknott` releases. The recipes for these
-two releases have been moved to the `dunfell` branch, while the `master`
-branch tracks the current `honister` and `kirkstone` releases. This is due to the breaking
+compatible with `dunfell` release. The recipes for this
+release have been moved to the `dunfell` branch, while the `master`
+branch tracks the current `kirkstone` release. This is due to the breaking
 changes in the syntactic rules for the recipe introduced in the `honister`
 release.
 
