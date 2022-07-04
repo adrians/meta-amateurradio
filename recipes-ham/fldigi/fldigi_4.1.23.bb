@@ -11,8 +11,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 SRC_URI = "http://www.w1hkj.com/files/fldigi/${BP}.tar.gz \
           "
-SRC_URI[md5sum] = "ecd6998e50c3888008baac5e3bc382b0"
-SRC_URI[sha256sum] = "0b146f3cec9d51b0c3000edda416041b49d6de4216a331a3a008a91ec2c731fe"
+SRC_URI[sha256sum] = "e366e1fc9fc343f57d39128a6603a696f872351ed48dba8f3c3d168bda1fca8d"
 
 inherit autotools gettext pkgconfig
 
