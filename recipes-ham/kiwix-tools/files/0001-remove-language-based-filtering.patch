@@ -1,0 +1,29 @@
+From e7a317c181276f0ec9862dbeb8e2e0ef00ea0f3a Mon Sep 17 00:00:00 2001
+From: Adrian Stratulat <adrian.stratulat91@gmail.com>
+Date: Thu, 14 Jul 2022 19:28:55 +0000
+Subject: [PATCH] remove language-based filtering
+
+---
+ static/skin/index.js | 9 ---------
+ 1 file changed, 9 deletions(-)
+
+diff --git a/static/skin/index.js b/static/skin/index.js
+index 7f29b31..beddd85 100644
+--- a/static/skin/index.js
++++ b/static/skin/index.js
+@@ -483,15 +483,6 @@
+         }
+         updateVisibleParams();
+         document.getElementById('kiwixSearchForm').onsubmit = (event) => {event.preventDefault()};
+-        if (!window.location.search) {
+-            const browserLang = navigator.language.split('-')[0];
+-            const langFilter = document.getElementById('languageFilter');
+-            const lang = browserLang.length === 3 ? browserLang : iso6391To3[browserLang];
+-            if (await getBookCount(`lang=${lang}`)) {
+-                langFilter.value = lang;
+-                langFilter.dispatchEvent(new Event('change'));
+-            }
+-        }
+         setCookie(filterCookieName, params.toString());
+     }
+ })();
