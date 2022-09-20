@@ -11,7 +11,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=57baf3d8c07efa88a6a07754076c97d7"
 
 SRC_URI = "http://users.telenet.be/on4qz/qsstv/downloads/${BPN}_${PV}.tar.gz \
           "
-MIRRORS += "https://low-level.wiki/large_files/"
+MIRRORS += "http://users.telenet.be/on4qz/qsstv/downloads/ https://low-level.wiki/large_files/"
 
 SRC_URI[md5sum] = "99e7fecd91f6c9bf211395fddceba44c"
 SRC_URI[sha256sum] = "c03f7fa5c680ced8fd331c25ff3e47440c9aedb48ec7b66255c6aa0ed88e7a68"
