@@ -9,19 +9,19 @@ This layer depends on:
 
 * URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
   * layer: `meta`
-  * branches: `kirkstone`
+  * branches: `kirkstone`/`langdale`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `kirkstone`
+  * branches: `kirkstone`/`langdale`
 
 Optional dependencies:
 
 * URI: https://github.com/meta-qt5/meta-qt5
   * layer: `meta-qt5`
-  * branches: `kirkstone`
+  * branches: `kirkstone`/`master`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `kirkstone`
+  * branches: `kirkstone`/`langdale`
 
 ## Issues & contributions
 
