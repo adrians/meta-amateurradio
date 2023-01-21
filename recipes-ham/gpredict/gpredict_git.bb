@@ -9,9 +9,9 @@ HOMEPAGE = "http://gpredict.oz9aec.net/"
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=892f569a555ba9c07a568a7c0c4fa63a"
 
-SRC_URI = "git://github.com/csete/gpredict.git;protocol=git;branch=master \
+SRC_URI = "git://github.com/csete/gpredict.git;protocol=https;branch=master \
           "
-SRCREV = "aa5771036f078e8f5bafa958661ac98ad3ed8f32"
+SRCREV = "0f3beb6adee605cf117ccaeabfe3e4ff6251c0af"
 S = "${WORKDIR}/git"
 
 inherit autotools-brokensep gettext pkgconfig
