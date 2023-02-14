@@ -9,9 +9,12 @@ HOMEPAGE = "http://www.w1hkj.com/"
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
-SRC_URI = "http://www.w1hkj.com/files/fldigi/${BP}.tar.gz \
+SRC_URI = "git://git.code.sf.net/p/fldigi/fldigi;protocol=git;branch=master \
           "
-SRC_URI[sha256sum] = "e366e1fc9fc343f57d39128a6603a696f872351ed48dba8f3c3d168bda1fca8d"
+# tag v4.1.24
+SRCREV = "9e15ddd3ecbc23e874e7fac4717a9187f8258028"
+
+S = "${WORKDIR}/git"
 
 inherit autotools gettext pkgconfig
 
