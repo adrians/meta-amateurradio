@@ -11,8 +11,11 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 SRC_URI = "git://git.code.sf.net/p/fldigi/fldigi;protocol=git;branch=master \
           "
-# tag v4.1.24
-SRCREV = "9e15ddd3ecbc23e874e7fac4717a9187f8258028"
+# tag v4.1.23
+SRCREV = "61b97f4133c488063f3de1795c894d22d5032e8a"
+
+# Version 4.1.24 requires Autoconf 2.71, which dunfell does
+# not support.
 
 S = "${WORKDIR}/git"
 
