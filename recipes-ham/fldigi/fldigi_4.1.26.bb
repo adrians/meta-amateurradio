@@ -11,8 +11,8 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
 SRC_URI = "git://git.code.sf.net/p/fldigi/fldigi;protocol=git;branch=master \
           "
-# tag v4.1.25
-SRCREV = "e680c43613e6af0a1e92b90f3ec12f7e81b00f56"
+# tag v4.1.26
+SRCREV = "fcc16248defaf73e6e7c9fdeb0d490134d6391fa"
 
 S = "${WORKDIR}/git"
 
