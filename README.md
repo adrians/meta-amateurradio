@@ -9,10 +9,10 @@ This layer depends on:
 
 * URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
   * layer: `meta`
-  * branches: `kirkstone`/`langdale`
+  * branches: `kirkstone`/`mickledore`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `kirkstone`/`langdale`
+  * branches: `kirkstone`/`mickledore`
 
 Optional dependencies:
 
@@ -21,7 +21,7 @@ Optional dependencies:
   * branches: `kirkstone`/`master`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `kirkstone`/`langdale`
+  * branches: `kirkstone`/`mickledore`
 
 ## Issues & contributions
 
@@ -33,7 +33,7 @@ Please send your issues, patches and pull requests on the github repository, at
 * Previously the master-branch of this repository was maintained to be
 compatible with `dunfell` release. The recipes for this
 release have been moved to the `dunfell` branch, while the `master`
-branch tracks the current `kirkstone` and `langdale` releases. This is due to the breaking
+branch tracks the current `kirkstone` and `mickledore` releases. This is due to the breaking
 changes in the syntactic rules for the recipe introduced in the `honister`
 release.
 
