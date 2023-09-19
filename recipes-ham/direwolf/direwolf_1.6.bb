@@ -10,6 +10,7 @@ LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=fa22e16ebbe6638b2bd253338fbded9f"
 
 SRC_URI = "git://github.com/wb2osz/direwolf.git;protocol=https;branch=master \
+           file://0001-disable-strlcat-strlcpy-implementations.patch \
           "
 
 SRCREV = "413855e7915865db998239e8383cb7f84d5ac1bd"
