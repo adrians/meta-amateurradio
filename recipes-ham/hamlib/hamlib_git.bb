@@ -16,7 +16,7 @@ SRC_URI = "git://git.code.sf.net/u/bsomervi/hamlib;protocol=git;branch=integrati
 # the wsjtx-2.5.2 tag:
 SRCREV = "53bb589d2cfb2a8e8525ff9bd7f57befb9e2caba"
 
-DEPENDS = "libusb1"
+DEPENDS = "libusb1 readline"
 
 S = "${WORKDIR}/git"
 
