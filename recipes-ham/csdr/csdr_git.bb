@@ -24,3 +24,6 @@ do_install () {
     oe_runmake install PREFIX=${D}
 }
 
+FILES:${PN} = "/bin/* /lib/*"
+INSANE_SKIP:${PN} = "usrmerge libdir"
+INSANE_SKIP:${PN}-dbg = "usrmerge libdir"
