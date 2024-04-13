@@ -9,12 +9,10 @@ HOMEPAGE = "https://hamlib.github.io/"
 LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-# WSJT-X needs the forked version of hamlib instead of the main one
-SRC_URI = "git://git.code.sf.net/u/bsomervi/hamlib;protocol=git;branch=integration \
+SRC_URI = "git://github.com/Hamlib/Hamlib/;protocol=https;branch=Hamlib-4.5.6 \
           "
 
-# the wsjtx-2.5.2 tag:
-SRCREV = "53bb589d2cfb2a8e8525ff9bd7f57befb9e2caba"
+SRCREV = "8832ad144a5f9e9990bc540c0b5cfc9f26e0f193"
 
 DEPENDS = "libusb1 readline"
 
