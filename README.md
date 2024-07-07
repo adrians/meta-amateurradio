@@ -9,19 +9,19 @@ This layer depends on:
 
 * URI: http://git.yoctoproject.org/cgit/cgit.cgi/poky/
   * layer: `meta`
-  * branches: `kirkstone`/`nanbield`/`scarthgap`
+  * branches: `kirkstone`/`scarthgap`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `kirkstone`/`nanbield`/`scarthgap`
+  * branches: `kirkstone`/`scarthgap`
 
 Optional dependencies:
 
 * URI: https://github.com/meta-qt5/meta-qt5
   * layer: `meta-qt5`
-  * branches: `kirkstone`/`master`
+  * branches: `kirkstone`/`scarthgap`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `kirkstone`/`nanbield`/`scarthgap`
+  * branches: `kirkstone`/`scarthgap`
 
 ## Issues & contributions
 
@@ -29,13 +29,6 @@ Please send your issues, patches and pull requests on the github repository, at
 <https://github.com/adrians/meta-amateurradio>.
 
 ## Hints
-
-* Previously the master-branch of this repository was maintained to be
-compatible with `dunfell` release. The recipes for this
-release have been moved to the `dunfell` branch, while the `master`
-branch tracks the current `kirkstone`, `nanbield` and `scarthgap` releases. This is due to the breaking
-changes in the syntactic rules for the recipe introduced in the `honister`
-release.
 
 * Some digital modes (WSPR, FT8, etc.) require a synchronized system clock. If
 the board does not have a synchronized RTC module but has an internet
