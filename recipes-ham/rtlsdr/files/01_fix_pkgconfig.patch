@@ -1,3 +1,6 @@
+
+Upstream-Status: Pending
+
 # YLB @ Axios provided this patch in openembedded-hawk
 # There's not a cleaner way to get at this variable post-patch
 # in bitbake so far as BTG can tell, either.

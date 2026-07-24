@@ -14,6 +14,4 @@ DEPENDS = "fftw rtlsdr"
 SRCREV = "66074b82daf4a1c588ce1c565a145fac1c59ec56"
 SRC_URI = "git://github.com/steve-m/kalibrate-rtl.git;protocol=https;branch=master \
           "
-S = "${WORKDIR}/git"
-
 inherit autotools pkgconfig

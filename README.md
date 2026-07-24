@@ -12,7 +12,7 @@ This layer depends on:
   * branches: `kirkstone`/`scarthgap`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-oe`
-  * branches: `kirkstone`/`scarthgap`
+  * branches: `whinlatter`
 
 Optional dependencies:
 
@@ -21,7 +21,7 @@ Optional dependencies:
   * branches: `kirkstone`/`scarthgap`
 * URI: http://git.openembedded.org/meta-openembedded
   * layer: `meta-networking`
-  * branches: `kirkstone`/`scarthgap`
+  * branches: `whinlatter`
 
 ## Issues & contributions
 

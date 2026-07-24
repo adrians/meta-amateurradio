@@ -15,6 +15,4 @@ SRCREV = "0d825fe08ef1e0225340fa7d8dffa621ad80a818"
 SRC_URI = "git://github.com/keenerd/rtl-sdr.git;protocol=https;branch=master \
            file://01_fix_pkgconfig.patch \
           "
-S = "${WORKDIR}/git"
-
 inherit autotools pkgconfig

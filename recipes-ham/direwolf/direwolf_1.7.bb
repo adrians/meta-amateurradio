@@ -14,12 +14,11 @@ SRC_URI = "git://github.com/wb2osz/direwolf.git;protocol=https;branch=master \
 
 SRCREV = "de293a1f2526ec6639fe31fa411bd4f2319ecdf4"
 
-S = "${WORKDIR}/git"
-
 DEPENDS = "alsa-lib udev"
 RDEPENDS:${PN} = "bash perl"
 
 inherit cmake
+EXTRA_OECMAKE = "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
 
 do_install:append() {
 	rm -f ${D}/usr/bin/telem-volts.py

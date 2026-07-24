@@ -19,8 +19,6 @@ SRC_URI = "git://git.code.sf.net/p/wsjt/wsjtx;protocol=git;nobranch=1 \
 # the wsjtx-2.6.1 tag:
 SRCREV = "848a38f1b46ea3dde9f45f104b6ec098eba35689"
 
-S = "${WORKDIR}/git"
-
 DEPENDS = "qttools-native asciidoc-native libgfortran boost fftw libusb \
            qtmultimedia qtserialport hamlib qttools portaudio-v19"
 
@@ -39,7 +37,7 @@ EXTRA_OECMAKE = " \
 OECMAKE_FIND_ROOT_PATH_MODE_PROGRAM = "BOTH"
 OECMAKE_GENERATOR = "Unix Makefiles"
 
-INSANE_SKIP:${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped buildpaths"
 
 # Because some of the code is written in fortran, we'll need GCC with fortran
 # support built-in. To enable this, you must add the following line to the

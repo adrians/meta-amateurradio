@@ -12,10 +12,8 @@ SRCREV = "bec4f0504b29369fd8ff651e6954b960991bc1b1"
 SRC_URI = "git://github.com/pothosware/SoapyRTLSDR.git;protocol=https;branch=master \
           "
 
-S = "${WORKDIR}/git"
-
 inherit cmake
-
+EXTRA_OECMAKE = "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
 DEPENDS = "rtlsdr soapysdr"
 RDEPENDS:${PN} = "rtlsdr soapysdr"
 FILES:${PN} += "${libdir}/*"

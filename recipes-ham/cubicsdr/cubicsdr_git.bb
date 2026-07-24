@@ -14,9 +14,8 @@ SRC_URI = "git://github.com/cjcliffe/CubicSDR.git;protocol=https;branch=master \
 
 SRCREV = "7b1956f7cd48e9adb520d862814573dd3130e59f"
 
-S = "${WORKDIR}/git"
-
 inherit cmake
+EXTRA_OECMAKE = "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
 DEPENDS = "virtual/libgles2 wxwidgets liquiddsp soapysdr pulseaudio"
 RDEPENDS:${PN} = "liquiddsp-dev"
 

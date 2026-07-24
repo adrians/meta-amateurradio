@@ -15,8 +15,6 @@ SRC_URI = "git://bitbucket.org/widefido/js8call.git;protocol=https;branch=js8cal
 
 SRCREV = "99018054a3b273f7086f4e086f5b848c645c23c8"
 
-S = "${WORKDIR}/git"
-
 DEPENDS = "qttools-native asciidoc-native libgfortran boost fftw libusb \
            qtmultimedia qtserialport hamlib qttools"
 
@@ -30,12 +28,13 @@ inherit cmake_qt5
 # wsjtx
 EXTRA_OECMAKE = " \
                  -Dhamlib_LIBRARY_DIRS='${WORKDIR}/recipe-sysroot/usr/lib/' \
+                 -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
                 "
 
 OECMAKE_FIND_ROOT_PATH_MODE_PROGRAM = "BOTH"
 OECMAKE_GENERATOR = "Unix Makefiles"
 
-INSANE_SKIP:${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped buildpaths"
 
 # Because some of the code is written in fortran, we'll need GCC with fortran
 # support built-in. To enable this, you must add the following line to the

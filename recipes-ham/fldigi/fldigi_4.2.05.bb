@@ -14,8 +14,11 @@ SRC_URI = "git://git.code.sf.net/p/fldigi/fldigi;protocol=git;branch=master \
 # tag v4.2.05
 SRCREV = "03b6d3d97a75ae8f65282f4be21e7f5bb0ab18a6"
 
-S = "${WORKDIR}/git"
-
 inherit autotools gettext pkgconfig
 
 DEPENDS = "fltk udev libsamplerate0 portaudio-v19"
+
+# Remove build host references before building [fixes Q buildpath]
+do_compile:prepend () {
+    sed -i -e 's|${TMPDIR}||g' ${B}/src/config.h
+}

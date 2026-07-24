@@ -15,8 +15,6 @@ SRC_URI = "git://github.com/jgaeddert/liquid-dsp.git;protocol=https;branch=maste
 
 SRCREV = "c68f5e39434433c88bd4fe19784bf4c8a32aa8e4"
 
-S = "${WORKDIR}/git"
-
 inherit autotools-brokensep
 INSANE_SKIP:${PN}-dev += "dev-elf"
 RDEPENDS:${PN}-dev = ""

@@ -16,8 +16,6 @@ SRCREV = "8832ad144a5f9e9990bc540c0b5cfc9f26e0f193"
 
 DEPENDS = "libusb1 readline"
 
-S = "${WORKDIR}/git"
-
 inherit autotools
 
 # WSJT-X requires the /usr/bin files from here to be available in the sysroot
